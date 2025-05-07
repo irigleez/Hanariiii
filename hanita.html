@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>El Amor De Mi Vida</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fff0f5;
+            color: #333;
+            padding: 40px;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carta {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 2;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+            margin-top: 25px;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        .flotando {
+            position: absolute;
+            font-size: 24px;
+            animation: flotar 10s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes flotar {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-10vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CORAZONES Y FLORES FLOTANTES -->
+    <script>
+        const emojis = ['💖', '🌸', '💗', '🌺', '💕', '🌼'];
+        for (let i = 0; i < 30; i++) {
+            const emoji = document.createElement('div');
+            emoji.classList.add('flotando');
+            emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+            emoji.style.left = Math.random() * 100 + 'vw';
+            emoji.style.animationDuration = (5 + Math.random() * 10) + 's';
+            emoji.style.fontSize = (20 + Math.random() * 20) + 'px';
+            document.body.appendChild(emoji);
+        }
+    </script>
+
+    <!-- CONTENIDO DE LA CARTA -->
+    <div class="carta">
+        <h1>Para el amor de mi vida 💖</h1>
+
+        <p>
+            Lo primero que te quiero dar son las gracias y te preguntarás por qué... pues por hacer que vuelva a sentir que amo a alguien.
+            Llevaba mucho tiempo esperando a que alguna chica me hiciera volver a sentir lo que se siente cuando amas a alguien,
+            y mira que yo no suelo ser ese tipo de persona cariñosa, sino al contrario, suelo ser bastante serio,
+            pero tú me sacas ese lado cariñoso gracias a lo feliz que me haces.
+        </p>
+
+        <p>
+            Aunque vivamos en islas diferentes, ese amor que tengo hacia ti no se va, simplemente va cada día haciéndose más y más grande.
+            Hablando sobre ti, lo que me transmites es mucha paz y amor. Eres una chica demasiado bonita,
+            tanto en el sentido sentimental como en el físico. Me gustan mucho tus ojos, aunque no lo creas,
+            pienso que te ves muy mona cuando sonríes y se te achinan los ojos (cosa que a mí también me pasa JAJAJA).
+            En general, me encantas en ambos sentidos.
+        </p>
+
+        <p>
+            Yo espero que esto siga siendo algo bonito y muy, muy, muy duradero,
+            ya que si por mí fuera estaría toda la vida contigo. Sé que a lo mejor te puede sonar muy loco eso,
+            pero sinceramente es lo que siento. Nunca había sentido un amor tan verdadero como el que siento ahora mismo contigo.
+        </p>
+
+        <p>
+            Yo soy un chico muy nervioso y muchas veces la paso mal por ese mismo motivo,
+            pero cuando estoy contigo se me olvida todo y solamente pienso en cosas buenas,
+            y todo eso es gracias a ti.
+        </p>
+
+        <p>
+            Ya para acabar quería volver a decirte que espero y deseo que este amor no acabe nunca
+            y que estemos juntos para siempre. ❤️///
+        </p>
+
+        <img src="https://i.postimg.cc/C1TLmSkh/foto.jpg">
+
+    </div>
+</body>
+</html>
